@@ -1,16 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
+﻿import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import RestaurantHeader from "./RestaurantHeader/RestaurantHeader";
-export default function App() {
+
+export default function RestaurantHeader() {
   return (
     <View style={
       {
         flex: 1,
-        alignItems: 'center',
         justifyContent: 'center',
+        alignItems: 'center',
       }
     }>
-      <RestaurantHeader />
+      <Text>식당이름</Text>
       <StatusBar style="auto" />
     </View>
   );
