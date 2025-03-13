@@ -3,8 +3,14 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <View style={
+      {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+      }
+    }>
+      <Text>여기는 본문 내용이 들어갈 장소입니다.</Text>
       <StatusBar style="auto" />
     </View>
   );
