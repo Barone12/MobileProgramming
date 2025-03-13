@@ -5,13 +5,18 @@ export default function RestaurantHeader() {
   return (
     <View style={
       {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
+        backgroundColor: '#F4ACE14'
       }
     }>
-      <Text>식당이름</Text>
-      <StatusBar style="auto" />
+      <Text
+          style={{
+            fontSize: 30,
+            color: 'black',
+            textAlign: 'center',
+          }}
+      >
+        일락정
+      </Text>
     </View>
   );
 }
