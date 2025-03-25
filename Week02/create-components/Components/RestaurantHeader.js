@@ -5,7 +5,7 @@ export default function RestaurantHeader() {
   return (
     <View style={
       {
-        backgroundColor: '#F4ACE14'
+        backgroundColor: '#FFDDAB'
       }
     }>
       <Text
@@ -15,17 +15,9 @@ export default function RestaurantHeader() {
             textAlign: 'center',
           }}
       >
-        일락정
+        귀귀살전
       </Text>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
