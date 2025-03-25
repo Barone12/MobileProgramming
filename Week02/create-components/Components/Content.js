@@ -82,4 +82,5 @@ const styles = StyleSheet.create({
         color: '#02343F',
         lineHeight: 22,
     },
+    
 });
