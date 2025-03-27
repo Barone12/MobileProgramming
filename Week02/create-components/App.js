@@ -4,7 +4,6 @@ import RestaurantHeader from "./Components/RestaurantHeader";
 import RestaurantFooter from "./Components/RestaurantFooter";
 import Title from "./Components/Title";
 import Content from "./Components/Content";
-import MenuList from "./Components/MenuList";
 
 // 실행 명령어: npx expo start --localhost --android
 export default function App() {
@@ -14,9 +13,9 @@ export default function App() {
           style={{
             backgroundColor: '#02343F',
             paddingTop: 20,
-          }}> 
+          }}>
         <RestaurantHeader />
-      </View> 
+      </View>
 
         <ScrollView>
           <View style={styles.contentContainer}>
@@ -24,13 +23,7 @@ export default function App() {
           <Content />
           </View>
         </ScrollView>
-        
-        <View>
-          <MenuList />
-        </View>
-        
         <RestaurantFooter />
-        
         <View style={{
           backgroundColor: '#02343F',
           paddingTop: 20,
@@ -42,7 +35,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 0.3,
+    flex: 1,
     backgroundColor: '#495E57',
   },
   contentContainer: {
