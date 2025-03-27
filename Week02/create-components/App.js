@@ -23,12 +23,19 @@ export default function App() {
           <Content />
           </View>
         </ScrollView>
+
+        <View>
+          <MenuList />
+        </View>
+        
         <RestaurantFooter />
+        
         <View style={{
           backgroundColor: '#02343F',
           paddingTop: 20,
         }}>
         </View>
+        
       </View>
   );
 }
