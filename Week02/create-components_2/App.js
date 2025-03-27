@@ -17,14 +17,15 @@ export default function App() {
             }}>
           <RestaurantHeader />
         </View>
+          
+          <ScrollView>
+              <View style={styles.contentContainer}>
+                  <Title text="귀귀살전: 조선풍 꼬리잡기 서바이벌" />
+                  <Content />
+              </View>
+          </ScrollView>
 
-        <ScrollView>
-          <View style={styles.contentContainer}>
-            <Title text="귀귀살전: 조선풍 꼬리잡기 서바이벌" />
-            <Content />
-          </View>
-        </ScrollView>
-
+          
         <View>
           <MenuList />
         </View>
@@ -43,7 +44,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 0.3,
+    flex: 0.5,
     backgroundColor: '#495E57',
   },
   contentContainer: {
