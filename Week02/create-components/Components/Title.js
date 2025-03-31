@@ -3,7 +3,7 @@ import {StyleSheet, Text, View} from 'react-native';
 
 export default function Title({ text = "제목없음" }) {
     return(<View>
-        <Text style={styles.title}>{text}</Text>;
+        <Text style={styles.title}>{text}</Text>
         </View>);
 }
 

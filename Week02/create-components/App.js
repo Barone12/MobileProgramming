@@ -4,7 +4,7 @@ import RestaurantHeader from "./Components/RestaurantHeader";
 import RestaurantFooter from "./Components/RestaurantFooter";
 import Title from "./Components/Title";
 import Content from "./Components/Content";
-
+import MenuList from "./Components/MenuList";
 // 실행 명령어: npx expo start --localhost --android
 export default function App() {
   return (
@@ -16,17 +16,17 @@ export default function App() {
           }}>
         <RestaurantHeader />
       </View>
-
+        <View style={{
+          flex: 0.4
+        }}>
         <ScrollView>
           <View style={styles.contentContainer}>
-          <Title text="귀귀살전: 조선풍 꼬리잡기 서바이벌" />
+          <Title text="귀귀살전: 조선풍 꼬리잡기 서바이벌1" />
           <Content />
           </View>
         </ScrollView>
-
-        <View>
-          <MenuList />
         </View>
+        <MenuList />
         
         <RestaurantFooter />
         
