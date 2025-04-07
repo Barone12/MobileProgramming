@@ -1,6 +1,6 @@
 ﻿import {StatusBar} from 'expo-status-bar';
 import React, {useState} from 'react';
-import {ScrollView, StyleSheet, Text, TextInput, View} from 'react-native';
+import {ScrollView, StyleSheet, Text, TextInput, View, KeyboardAvoidingView, Platform} from 'react-native';
 
 export default function SubscribeScreen() {
   const [name, setName] = useState('');
@@ -9,6 +9,8 @@ export default function SubscribeScreen() {
   const [opinion, setOpinion] = useState('');
   
     return (
+        <KeyboardAvoidingView
+            behavior={Platform.OS === 'ios' ? 'padding' : 'height'} style={{flex: 1}}>
         <ScrollView style={styles.container}
         keyboardDismissMode='on-drag'>
           <Text numberOfLines={1} style={styles.textTitle}>
@@ -52,8 +54,7 @@ export default function SubscribeScreen() {
                 onChangeText={setOpinion}
                 keyboardType={"default"}
                 multiline/>
-            
-            
+
             {(opinion) ? (
                 <View style={styles.confirmContainer}>
                     <Text style={styles.text}>
@@ -62,6 +63,7 @@ export default function SubscribeScreen() {
                 </View>
             ): null}
         </ScrollView>
+        </KeyboardAvoidingView>
     );
 }
 
