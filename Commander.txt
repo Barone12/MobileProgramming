@@ -1,0 +1,5 @@
+실행 명령어: 
+npx expo start --localhost --android
+
+프로젝트 생성 명령어 : 
+npx create-expo-app@latest --template blank [프로젝트 이름]
