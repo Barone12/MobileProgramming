@@ -7,6 +7,7 @@ import Content from "./Components/Content";
 import MenuList from "./Components/MenuList";
 import {useState} from "react";
 import MenuButton from "./Components/MenuButton";
+//npx create-expo-app@latest --template blank [expo 디렉터리 이름]
 // 실행 명령어: npx expo start --localhost --android
 export default function App() {
     const [showMenu, setShowMenu] = useState(false);
