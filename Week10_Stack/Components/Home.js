@@ -28,13 +28,6 @@ export default function Home() {
     );
 }
 
-const popupMenuList = ({flexity, content}) => (
-    <View style={{flex: flexity}}>
-        {content}
-    </View>
-);
-
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,
