@@ -1,7 +1,6 @@
-﻿import {Text} from 'react-native';
-import {Tabs} from 'expo-router';
+﻿import {Slot} from 'expo-router';
 
-export default function Layout() {
+export default function welcomeLayout() {
     return (
         <Tabs screenOptions={{headerShown: false}}>
             <Tabs.Screen
@@ -16,13 +15,13 @@ export default function Layout() {
                 }}
             />
             <Tabs.Screen
-            name='aoutus'
-            options={{
-                title: '우리는요',
-                tabBarIcon: ({color, size, focused}) => (
-                    <Text style={{fontSize: 20}}>
-                        {focused ? '👓' : '🕶'}
-                    </Text>
+                name='aoutus'
+                options={{
+                    title: '우리는요',
+                    tabBarIcon: ({color, size, focused}) => (
+                        <Text style={{fontSize: 20}}>
+                            {focused ? '👓' : '🕶'}
+                        </Text>
                     ),
                 }}
             />
