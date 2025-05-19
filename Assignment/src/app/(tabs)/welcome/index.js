@@ -128,7 +128,7 @@ export default function Content() {
                     marginVertical: 10,
                 }}>
                     <Pressable
-                        onPress={() => router.push('/')}
+                        onPress={() => router.push('/(tabs)/welcome/subscribe')}
                         style={{
                             marginTop: 20,
                             padding: 10,
